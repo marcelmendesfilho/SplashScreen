@@ -1,0 +1,31 @@
+# create table script for MySQL database
+
+CREATE TABLE `SPLASH` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `key` char(50) DEFAULT NULL,
+  `app` char(50) DEFAULT NULL,
+  `version` char(50) DEFAULT NULL,
+  `locale` char(50) DEFAULT NULL,
+  `main_title` char(50) DEFAULT NULL,
+  `title_1` char(50) DEFAULT NULL,
+  `icon_1` char(50) DEFAULT NULL,
+  `text_1` text,
+  `title_2` char(50) DEFAULT NULL,
+  `icon_2` char(50) DEFAULT NULL,
+  `text_2` text,
+  `title_3` char(50) DEFAULT NULL,
+  `icon_3` char(50) DEFAULT NULL,
+  `text_3` text,
+  `title_4` char(50) DEFAULT NULL,
+  `icon_4` char(50) DEFAULT NULL,
+  `text_4` text,
+  `footnote_icon` char(50) DEFAULT NULL,
+  `footnote_text` char(250) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
+
+# insert example
+
+INSERT INTO `SPLASH` (`id`, `key`, `app`, `version`, `locale`, `main_title`, `title_1`, `icon_1`, `text_1`, `title_2`, `icon_2`, `text_2`, `title_3`, `icon_3`, `text_3`, `title_4`, `icon_4`, `text_4`, `footnote_icon`, `footnote_text`)
+VALUES
+    (1, 'splash', 'marcelmendes.splashscreen', '1.0', 'EN', 'WELCOME TO SPLASH SCREEN', 'How to #1', 'startSession_40.png', 'Enter here how to #1 text', 'How to #2', 'joinSession_40.png', 'Enter here how to #2 text.', 'How to #3', 'information_40.png', 'Enter here how to #3 text.', 'How to #4', 'copy_40@3x.png', 'Enter here how to #4 text.', NULL, NULL);

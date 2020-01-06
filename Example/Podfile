@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SplashScreen_Example' do
+  pod 'SplashScreen', :path => '../'
+
+  target 'SplashScreen_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

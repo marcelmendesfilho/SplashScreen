@@ -1,0 +1,31 @@
+{
+  "name": "SplashScreen",
+  "version": "1.0.0",
+  "summary": "A short description of SplashScreen.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/marcel.mendes@gmail.com/SplashScreen",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "marcel.mendes@gmail.com": "marcel.mendes@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/marcel.mendes@gmail.com/SplashScreen.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "SplashScreen/Classes/**/*",
+  "resource_bundles": {
+    "SplashScreen": [
+      "SplashScreen/Assets/**/*.{storyboard,xib}"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
+}
